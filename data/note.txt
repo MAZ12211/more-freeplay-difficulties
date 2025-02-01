@@ -1,0 +1,3 @@
+If you have a new extra difficulty, you make a json patch
+that adds your difficulty to the freeplay menu (due to a base game bug)
+and if your difficulty is off center, you may adjust the x and y values

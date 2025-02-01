@@ -1,0 +1,48 @@
+import funkin.play.PlayState;
+import funkin.modding.module.Module;
+import flixel.FlxG;
+import funkin.graphics.FunkinSprite;
+import funkin.Paths;
+import openfl.utils.Assets;
+import funkin.ui.freeplay.FreeplayState;
+import funkin.ui.freeplay.DifficultySprite;
+import funkin.util.Constants;
+import haxe.Json;
+
+class freeplayDiffFix extends Module {
+    var jsonPath:String;
+    public function new() {
+        super("freeplayDiffFix", 1);
+    }
+    override function onSubStateOpenEnd(event){
+        super.onSubStateOpenEnd(event);
+        var state = event.targetState;
+        jsonPath = Paths.json("extraDiffs");
+        /*
+            json format (needs to have the items and then the offset placements)
+            {
+                "difficulties": [
+                    {"id": "insane", "x": 0, "y": 0},
+                    {"id": "duet", "x": 0, "y": 0}
+                ]
+            }
+
+            * Note for feature self, if this bug is fixed (https://github.com/FunkinCrew/Funkin/issues/3912), id will be used for detecting the difficulty only instead of detecting it and adding it to the list of difficulties
+            * Since there's no way to deal with offset placements yet
+        */
+        if (Assets.exists(jsonPath)) {
+            var data = Json.parse(Assets.getText(jsonPath));
+            if (Std.isOfType(state, FreeplayState)) {
+                for (diff in data.difficulties) {
+                    var diffSprite:DifficultySprite = new DifficultySprite(diff.id);
+                    diffSprite.difficultyId = diff.id;
+                    diffSprite.visible = diff.id == Constants.DEFAULT_DIFFICULTY;
+                    state.grpDifficulties.add(diffSprite);
+                    if (diff.x != null) diffSprite.x += diff.x;
+                    if (diff.y != null) diffSprite.y += diff.y;
+                    diffSprite.visible = false;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+I used Adobe Animate 2022 version,
+opened up the flash file,
+changed the colors via bucket tool,
+as for picking the colors, it's just trial and error and see what fits,
+export as a png sequence,
+open up Gimp,
+place the each letter next to each other manually, each letter
+needs to have one space between them unlike the freeplay difficulty sprites
+where each letter can barely have spaces and one letter has to be
+squished to another letter in some cases,
+Rotate all letters in -4.4 angle with noHalo interpolation to not
+mess/change the antialiasing of the text to be pixelated,
+export

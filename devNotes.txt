@@ -1,0 +1,104 @@
+.LOG
+2:30 PM 11/21/2024
+Ideas so far:
+4K, 7K, EXPERT, BABY👶 (Replace with BGINER with naughtiness off), DUET
+
+4K, 7K should be light gray
+
+BABY👶 is cyan
+
+EXPERT Should be dark pink
+in case Erect gets replaced with the same name with naughtiness off
+
+DUET is orange
+3:04 PM 11/21/2024
+BABY👶 (BGINER) and any difficulty that is easier than EASY are scrapped.
+
+4:49 PM 11/22/2024
+Text size of 50px doesn't look like base game's
+Edit: 70px looks alright somewhat, but not what I want
+
+12:26 PM 11/23/2024
+Using the difficulty font doesn't work out, it has to be done by hand, which is very difficult for me, but let's see.
+Mania is replaced with Insane. (EDIT 11/1/2025: Reason: Insane is more descriptive and accurate than Mania to the average player)
+How it'd look: light orange with fire around the upper outlines of the text as the animation for it.
+
+12:40 PM 11/23/2024
+Had trouble drawing the letters due to using a mouse instead of a drawing tablet like everyone else and very minor hand twitching that messes up my accuracy, until a family member told me a tip, which is to draw every part of a letter with a straight line one at a time instead of drawing the whole letter in one go (draw then press SHIFT to make a straight line and CTRL for accurate angle)
+1:52 PM 11/23/2024
+Brush sizes: 8px for big letters, 6px for small
+Outline guide: Select → Grow by 5px
+
+1:29 PM 12/14/2024
+I made an Insane difficulty sprite that looks alright, I'd say,
+but when I compared it to base game's the other day,
+it looked... mechanical and not... handwritten like the original,
+so I asked a family member about it and got told that
+drawing with a mouse is hard in general,
+and I should try to draw and animate on my phone or my school tablet instead of using
+a mouse because at least you get more control just by using your fingers.
+I think Ibis Paint had an update about animation, right? I'll check later
+
+1:53 PM 12/14/2024
+I checked, and yes it does support animation
+
+6:35 PM 1/26/2025
+Change of plans, we're doing it in Gimp again. Here is the "routine":
+- Trace the outline of the original letters, not every letter is included in the original game, like K or U,
+so I'll create the remaining ones by hand.
+
+Ink tool (brush tool didn't work out) → 3px
+- Coloring:
+  - Magic wand in the inner part of a letter
+  - Make a layer meant for coloring the inner part of a letter
+  - Select → Grow → 1px (or 2px)
+
+12:46 PM 1/27/2025
+Colors:
+Duet 
+#ff7600
+
+Insane
+purple: HTML notation: 521452
+dark purple: HTML notation: 110411
+
+6:40 PM 1/28/2025
+Realized that the purple color is used for Night,
+so we're using a mix of bright orange and bright red as a gradient color
+
+11:05 PM 1/28/2025
+Nsane and Duet are done, so what's left is the cosmetic or extra difficulties that
+are used in mods, including
+
+Chill difficulty is a variation difficulty
+if you have a chill version of a song
+Color: green, blue? What represents peace or chill vibes?
+
+4 Key, 7 Key, 9 Key
+self-explanatory if you think about it for a bit
+Color: gray
+
+That's about it, I think?
+INST ONLY maybe? But you might as well make a new song for that
+as FNF songs' instrumental versions aren't meant to be played in the first place
+
+Yeah, I think I'm satisfied with the extra ones
+Chill, 4K, 7K, 9 Key
+
+1:56 PM 1/29/2025
+After doing Chill, I remembered that I needed an Edit difficulty,
+which I just finished drawing. Pretty proud of it
+
+Edit difficulty is an edited version of the chart
+(what difficulty of the chart exactly is irrelevant when it comes to Edit as the rules are up to the charter),
+VSRGs with .sm file support have this in their games
+
+3:35 PM 1/29/2025
+Okay, I'm finally done with all the difficulties I want to add
+although later I decided not to include 9K at the end
+due to its bigger rarity in FNF mods than 7K
+I made sure to take one last look before I close down Gimp,
+and I think it's safe to say I did alright, and I'm satisfied with the results
+and it's in a state where I think it's complete
+and doesn't demand too many post-launch updates
+besides compatibility fixes and small touches
