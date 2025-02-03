@@ -8,7 +8,6 @@ This mod includes **Insane**, **Duet**, **Chill**, **Edit**, **4K**, **7K**.
 
 ### Here's how
 
-First [add this mod as a dependency](https://funkincrew.github.io/funkin-modding-docs/01-fundamentals/01-01-the-metadata-file.html)
 for assets you need:
 
 - the chart files with your custom difficulties in them ([Here's an example mod that uses this mod for Insane and Duet difficulties]).
@@ -19,17 +18,22 @@ For the latter, you can open [the letters' flash file](https://github.com/Funkin
 ### and that's it, but wait!
 
 You may encounter [this bug](https://github.com/FunkinCrew/Funkin/issues/3912), here's the method to fix it using this mod:
-The simplest method that worked for me is [appending the JSON file that stores all extra difficulties](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-01-appending-files.html#appending-to-json-files).
+The simplest and most efficient way of doing it is by [making a JSON patch that adds your new difficulty into the json file](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-02-merging-files.html#merging-into-json-files) without affecting base game or other mods.
 
-- Add a file called `extraDiffs.json` in `yourmod/_append/data`
-- The rest is simple if you read [the documentation linked above](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-01-appending-files.html#appending-to-json-files). simple as that but here's a quick snippet if you want a quick copy & paste.
+- Add a file called `extraDiffs.json` in `yourmod/_merge/data`
+- The rest is simple if you read [the documentation linked above](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-02-merging-files.html#merging-into-json-files), but here's a snippet if you want a quick copy & paste.
 
 ```json
+[
 {
-    "difficulties": [
-        {"id": "yourDiff", "x": -9}
-    ]
+    "op": "add",
+    "path": "/difficulties/-",
+    "value": {
+        "id": "mania",
+        "x": -10
+    }
 }
+]
 ```
 
 `id` is self explanatory, `x` and `y` are optional values and control the placement of the difficulty sprite in freeplay menu in case your sprite is off center.
