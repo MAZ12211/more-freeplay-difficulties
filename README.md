@@ -22,12 +22,12 @@ You may encounter [this bug](https://github.com/FunkinCrew/Funkin/issues/3912), 
 The simplest method that worked for me is [appending the JSON file that stores all extra difficulties](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-01-appending-files.html#appending-to-json-files).
 
 - Add a file called `extraDiffs.json` in `yourmod/_append/data`
-- The rest is simple if you read [the documentation linked above](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-01-appending-files.html#appending-to-json-files). simple as that but here's an example snippet to make things quicker.
+- The rest is simple if you read [the documentation linked above](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-01-appending-files.html#appending-to-json-files). simple as that but here's a quick snippet if you want a quick copy & paste.
 
 ```json
 {
     "difficulties": [
-        {"id": "duet", "x": -9}
+        {"id": "yourDiff", "x": -9}
     ]
 }
 ```
