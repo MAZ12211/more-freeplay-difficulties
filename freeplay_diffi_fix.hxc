@@ -28,7 +28,7 @@ class freeplayDiffFix extends Module {
             }
 
             * Note for feature self, if this bug is fixed (https://github.com/FunkinCrew/Funkin/issues/3912), id will be used for detecting the difficulty only instead of detecting it and adding it to the list of difficulties
-            * Since there's no way to deal with offset placements yet
+            * Since there's no way to deal with offset placements yet (until there's one officially lol)
         */
         if (Assets.exists(jsonPath)) {
             var data = Json.parse(Assets.getText(jsonPath));

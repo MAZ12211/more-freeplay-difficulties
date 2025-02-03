@@ -20,6 +20,7 @@ For the latter, you can open [the letters' flash file](https://github.com/Funkin
 
 You may encounter [this bug](https://github.com/FunkinCrew/Funkin/issues/3912), here's the method to fix it using this mod:
 The simplest method that worked for me is [appending the JSON file that stores all extra difficulties](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-01-appending-files.html#appending-to-json-files).
+
 - Add a file called `extraDiffs.json` in `yourmod/_append/data`
 - The rest is simple if you read [the documentation linked above](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-01-appending-files.html#appending-to-json-files). simple as that but here's an example snippet to make things quicker.
 
@@ -31,4 +32,4 @@ The simplest method that worked for me is [appending the JSON file that stores a
 }
 ```
 
-`id` is self explanatory, `x` and `y` are optional values and control the placement of the difficulty sprite in freeplay menu in case your sprite is off center. 
+`id` is self explanatory, `x` and `y` are optional values and control the placement of the difficulty sprite in freeplay menu in case your sprite is off center.

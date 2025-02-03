@@ -8,5 +8,5 @@
     {"name": "Psych Ward's base game channels", "role": "Major code help", "url": "https://discord.gg/psychengine"},
     {"name": "Funkin's discussions page", "role": "Major code help", "url": "https://github.com/FunkinCrew/Funkin/discussions"}
 ],
-  "license": "Apache-2.0"
+  "license": "MIT"
 }
