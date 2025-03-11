@@ -1,9 +1,9 @@
 {
     "difficulties": [
         {"id": "insane", "x": -10, "y": -5},
-        {"id": "duet", "x": -9},
+        {"id": "duet", "x": -5, "y": 2},
         {"id": "chill", "x": -10, "y": -1},
-        {"id": "edit", "x": -2},
+        {"id": "edit", "x": 15, "y": 2},
         {"id": "4k", "y": -2},
         {"id": "7k"}
     ]
