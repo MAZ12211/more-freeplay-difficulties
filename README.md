@@ -19,6 +19,7 @@ For the latter, you can open [the letters' flash file](https://github.com/Funkin
 
 You may encounter [this bug](https://github.com/FunkinCrew/Funkin/issues/3912), here's the method to fix it using this mod:
 The simplest and most efficient way of doing it is by [making a JSON patch that adds your new difficulty into the json file](https://funkincrew.github.io/funkin-modding-docs/10-appending-and-merging-files/10-02-merging-files.html#merging-into-json-files) without affecting base game or other mods.
+
 Again, It is **strongly** recommended to use `_merge` logic to avoid compatibility issues with mods!
 
 - Add a file called `extraDiffs.json` in `yourmod/_merge/data`
