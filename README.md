@@ -1,7 +1,7 @@
 # More Freeplay Difficulties
 
 Adds more fun difficulties for players to play and modders and charters to use!
-This mod includes **Insane**, **Duet**, **Chill**, **Edit**, **4K**, **7K**.
+This mod includes **Insane**, **Duet**, **Chill**, **Edit**, **4K**, **7K**, **6K**, and **9K**.
 [Here's an example mod that uses this mod!][def]
 
 ## But I want to add my custom difficulty to base game too!
